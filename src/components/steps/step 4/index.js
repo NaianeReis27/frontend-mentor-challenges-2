@@ -1,25 +1,15 @@
 import { Step } from './styles';
-import { InputFieldComponent } from '../../InputField';
+import { CardBillComponent } from '../../CardBill';
 
 export const Step4 = () => {
   return (
     <Step>
       <div className="container-texts">
-          <h3>4</h3>
-          <p>Please provide your name, email address, and phone number.</p>
-        </div>
+        <h3>Finish up</h3>
+        <p>Double-check everything looks Ok before confirming</p>
+      </div>
 
-        <div className="container-inputs">
-          <InputFieldComponent label={'Name'} placeholder={'Vanessa Mint'} />
-          <InputFieldComponent
-            label={'Email Address'}
-            placeholder={'vanessamint@'}
-          />
-          <InputFieldComponent
-            label={'Phone Number'}
-            placeholder={'e.g. +1 234 567 890'}
-          />
-        </div>
+      <CardBillComponent></CardBillComponent>
     </Step>
   );
 };

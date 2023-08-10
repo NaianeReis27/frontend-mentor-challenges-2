@@ -10,6 +10,7 @@ export const Form = styled.form`
   background-color: var(--white-color);
   padding: 16px;
   box-shadow: 0px 9px 43px 0px rgba(46, 46, 46, 0.09);
+  gap:40px;
 
   aside {
     display: flex;
@@ -23,7 +24,8 @@ export const Form = styled.form`
   }
 
   .step-container {
-    min-height: fit-content;
+    max-width: 500px;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
     display: flex;
@@ -55,13 +57,13 @@ export const Form = styled.form`
         font-size: 16px;
         color: var( --gray-color);
         background: none;
-        padding: ;
         border: none;
       }
     }
   }
 
   @media (max-width: 800px) {
+   
     height: 100vh;
     border-radius: 0;
     flex-direction: column;
@@ -82,6 +84,7 @@ export const Form = styled.form`
     }
 
     .step-container {
+      max-width: 100%;
       height: 100%;
       padding: 0 16px;
       position: relative;

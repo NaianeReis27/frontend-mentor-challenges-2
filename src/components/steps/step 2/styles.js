@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Step = styled.div`
-  margin: 0 auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -20,6 +19,10 @@ export const Step = styled.div`
     width: 100%;
     display: flex;
     gap: 18px;
+  }
+
+  select {
+    display: none;
   }
 
   h3 {

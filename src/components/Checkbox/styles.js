@@ -28,13 +28,13 @@ export const Checkbox = styled.div`
 
   .monthly {
     color: var(
-      ${({ currentChoose }) => (currentChoose ?  '--gray-color':  '--marine-blue-color')}
+      ${({billing}) => (billing == "monthly" ? '--marine-blue-color' : '--gray-ligth-color'  )}
     );
   }
 
   .yearly {
     color: var(
-      ${({ currentChoose }) => (currentChoose ? '--marine-blue-color' : '--gray-color')}
+      ${({billing}) => (billing == "yearly" ? '--marine-blue-color' : '--gray-ligth-color')}
     );
   }
   input[type='checkbox']:before {

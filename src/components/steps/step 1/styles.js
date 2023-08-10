@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Step = styled.div`
-  margin: 0 auto;
+  margin: 0 ;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -11,12 +11,12 @@ export const Step = styled.div`
   box-shadow: none;
 
   .container-texts {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
   .container-inputs {
-    max-width: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ export const Step = styled.div`
 
   
   @media (max-width: 800px) {
+    width: 100%;
     display: flex;
     align-items: center;
     margin: -70px auto 0 auto;

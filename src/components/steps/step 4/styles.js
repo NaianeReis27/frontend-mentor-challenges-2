@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Step = styled.div`
+width: 100%;
   margin: 0 auto;
   border-radius: 10px;
   display: flex;
@@ -11,25 +12,24 @@ export const Step = styled.div`
   box-shadow: none;
 
   .container-texts {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .container-inputs {
-    max-width: 450px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+ 
+  .container-build{
 
+  }
   h3 {
     font-size: 32px;
     font-weight: bold;
     color: var(--marine-blue-color);
   }
   
-  @media (max-width: 850px) {
+  @media (max-width: 800px) {
+    
+    
     display: flex;
     align-items: center;
     margin: -70px auto 0 auto;

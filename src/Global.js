@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components";
-import UbuntuFontBold from '../src/assets/fonts/Ubuntu-Bold.ttf'
-import UbuntuFontRegular from '../src/assets/fonts/Ubuntu-Regular.ttf'
-import UbuntuFontMedium from '../src/assets/fonts/Ubuntu-Medium.ttf'
+import { createGlobalStyle } from 'styled-components';
+import UbuntuFontBold from '../src/assets/fonts/Ubuntu-Bold.ttf';
+import UbuntuFontRegular from '../src/assets/fonts/Ubuntu-Regular.ttf';
+import UbuntuFontMedium from '../src/assets/fonts/Ubuntu-Medium.ttf';
 export const Global = createGlobalStyle`
 
 @font-face {
@@ -33,18 +33,19 @@ export const Global = createGlobalStyle`
   --alabaster-color: hsl(231, 100%, 99%);
   --white-color: hsl(0, 0%, 100%);
   --blue-ligth-color: hsl(215, 100%, 97%);
+  --publish-blue-color: hsl(243, 100%, 62%);
   --marine-blue-color: hsl(213, 96%, 18%);
   --transparent-color: transparent;
+  --strawberry-red-color: hsl(354, 84%, 57%);
+  --strawberry-red-color: hsl(354, 84%, 57%);
   }
-  /* - Marine blue: hsl(213, 96%, 18%)
-- Purplish blue: hsl(243, 100%, 62%)
-- Pastel blue: hsl(228, 100%, 84%)
-- Light blue: hsl(206, 94%, 87%)
-- Strawberry red: hsl(354, 84%, 57%) */
+
+  
 *{
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    transform: 0.5s;
 }
 
 p{

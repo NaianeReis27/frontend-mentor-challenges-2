@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const Card = styled.div`
   cursor: pointer;
   width: 140px;
-  height: 160px;
+  gap: 45px;
   border-radius: 10px;
-  border: 1px solid var(--marine-blue-color);
+  border: 2px solid var(${({ selected }) => (selected ? '--marine-blue-color' : '--gray-ligth-color')});
+  background-color: var(${({ selected }) => (selected ? '--alabaster-color' : 'none')});
   display: flex;
   flex-direction: column;
-  background-color: var(--alabaster-color);
+
   justify-content: space-between;
   padding: 20px 16px;
   img{
@@ -18,9 +19,20 @@ export const Card = styled.div`
 
   }
 
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+  }
+
   h4{
     font-size: 16px;
     font-weight: 500;
+    color: var(--marine-blue-color);
+  }
+
+  h5{
+    
     color: var(--marine-blue-color);
   }
 
