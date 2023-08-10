@@ -8,7 +8,7 @@ export const CheckComponent = () => {
   const checkRef = useRef();
   const watchedValues = watch();
 
-  const [billing, setBillingData] = useState();
+  const [billing, setBillingData] = useState(getValues().billing);
   useEffect(() => {
     if (getValues().billing == 'monthly') {
       checkRef.current.checked = false;
